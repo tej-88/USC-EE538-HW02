@@ -89,3 +89,15 @@ TEST(UniqueVectorBySet, MixedInput) {
     std::vector<int> expected = {1, 2, 4};
     EXPECT_EQ(expected, input);
 }
+
+// Write several test cases for each function.
+//-----------------------------------------------------------------------------
+
+TEST(IntersectVectors, EmptyInput) {
+    CPPLib s;
+    std::vector<int> input_1;
+    std::vector<int> input_2;
+    std::vector<int> actual = s.IntersectVectors(input_1, input_2);
+    std::vector<int> expected;
+    EXPECT_EQ(expected, actual);
+}
