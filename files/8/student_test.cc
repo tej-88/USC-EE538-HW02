@@ -14,3 +14,11 @@ TEST(UniqueVectorNotBySet, EmptyInput) {
     std::vector<int> expected;
     EXPECT_EQ(expected, input);
 }
+
+TEST(UniqueVectorNotBySet, SingleInput) {
+    CPPLib s;
+    std::vector<int> input = {1};
+    s.UniqueVectorNotBySet(input);
+    std::vector<int> expected = {1};
+    EXPECT_EQ(expected, input);
+}
