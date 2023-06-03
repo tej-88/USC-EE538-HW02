@@ -61,3 +61,12 @@ TEST(Calculate, Bitwise_OR) {
     float expected = 30;
     EXPECT_EQ(expected, actual);
 }
+
+TEST(Calculate, Bitwise_XOR) {
+    CPPLib s;
+    int a = 10;
+    int b = 20;
+    float actual = s.Calculate(a, b, Operation::kBitwise_XOR);
+    float expected = 30;
+    EXPECT_EQ(expected, actual);
+}
