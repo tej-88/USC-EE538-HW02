@@ -327,3 +327,13 @@ TEST(Reverse, SingleInput) {
     EXPECT_EQ(expected, input);
     EXPECT_EQ(expected_int, actual_int);
 }
+
+TEST(Reverse, MultiInputDuplicate) {
+    CPPLib s;
+    std::string input = "aaaa";
+    int actual_int = s.Reverse(input);
+    std::string expected = "aaaa";
+    int expected_int = 0;
+    EXPECT_EQ(expected, input);
+    EXPECT_EQ(expected_int, actual_int);
+}
