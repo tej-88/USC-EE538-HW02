@@ -73,3 +73,11 @@ TEST(UniqueVectorBySet, DuplicateInput) {
     std::vector<int> expected = {1};
     EXPECT_EQ(expected, input);
 }
+
+TEST(UniqueVectorBySet, UniqueInput) {
+    CPPLib s;
+    std::vector<int> input = {1, 1, 1};
+    s.UniqueVectorBySet(input);
+    std::vector<int> expected = {1};
+    EXPECT_EQ(expected, input);
+}
