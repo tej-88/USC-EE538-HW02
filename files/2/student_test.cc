@@ -227,3 +227,15 @@ TEST(NumberOfVowels, SpecialChars) {
     int expected = 0;
     EXPECT_EQ(expected, actual);
 }
+
+//-----------------------------------------------------------------------------
+// Write some test cases for each function.
+//-----------------------------------------------------------------------------
+
+TEST(NumberOfConsonants, EmptyInput) {
+    CPPLib s;
+    std::string input;
+    int actual = s.NumberOfConsonants(input);
+    int expected = -1;
+    EXPECT_EQ(expected, actual);
+}
