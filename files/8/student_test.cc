@@ -57,3 +57,11 @@ TEST(UniqueVectorBySet, EmptyInput) {
     std::vector<int> expected;
     EXPECT_EQ(expected, input);
 }
+
+TEST(UniqueVectorBySet, SingleInput) {
+    CPPLib s;
+    std::vector<int> input = {1};
+    s.UniqueVectorBySet(input);
+    std::vector<int> expected = {1};
+    EXPECT_EQ(expected, input);
+}
