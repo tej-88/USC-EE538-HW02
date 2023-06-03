@@ -295,3 +295,11 @@ TEST(NumberOfConsonants, SomeConsonantsDiffCase) {
     int expected = 9;
     EXPECT_EQ(expected, actual);
 }
+
+TEST(NumberOfConsonants, SpecialChars) {
+    CPPLib s;
+    std::string input = "?\" \\)(*&^%)'";
+    int actual = s.NumberOfConsonants(input);
+    int expected = 0;
+    EXPECT_EQ(expected, actual);
+}
