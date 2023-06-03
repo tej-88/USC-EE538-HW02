@@ -163,3 +163,11 @@ TEST(NumberOfVowels, EmptyInput) {
     int expected = -1;
     EXPECT_EQ(expected, actual);
 }
+
+TEST(NumberOfVowels, NoVowels) {
+    CPPLib s;
+    std::string input = "bcdrg";
+    int actual = s.NumberOfVowels(input);
+    int expected = 0;
+    EXPECT_EQ(expected, actual);
+}
