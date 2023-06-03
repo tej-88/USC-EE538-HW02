@@ -86,3 +86,23 @@ int CPPLib::NumberOfConsonants(std::string &input) {
     
     return (num_letters - num_vowels);
 }
+
+// Returns the revers of a string.
+// Example input: 'ted', output: 'det'.
+// Note: You cannot use any std:: functions.
+int CPPLib::Reverse(std::string &input) {
+    if (input.size() == 0) {
+        return -1;
+    }
+
+    std::string tmp_str;
+
+    for (int i = input.size() - 1; i >= 0 ; i--) {
+        tmp_str.push_back(input.at(i));
+    }
+
+    input.clear();
+    input = tmp_str;
+
+    return 0;
+}
