@@ -1,0 +1,9 @@
+Q1: 2 / 2 passed | score: 10
+Q2: 25 / 25 passed | score: 25
+Q3: 1 / 1 passed | score: 20
+Q4: 4 / 4 passed | score: 10.0
+Q5: 7 / 7 passed | score: 20
+Q8: 8 / 8 passed | score: 15.0
+-----------------------------------------
+Your total score of coding section: 100.0
+-----------------------------------------
