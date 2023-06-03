@@ -25,3 +25,12 @@ TEST(GetFullName, EmptyFirst) {
     std::string expected = " Adams";
     EXPECT_EQ(expected, actual);
 }
+
+TEST(GetFullName, EmptyLast) {
+    CPPLib s;
+    std::string first = "John";
+    std::string last;
+    std::string actual = s.GetFullName(first, last);
+    std::string expected = "John ";
+    EXPECT_EQ(expected, actual);
+}
