@@ -47,3 +47,11 @@ TEST(IndexOfFirstSpace, MidSpace) {
     int expected = 4;
     EXPECT_EQ(expected, actual);
 }
+
+TEST(IndexOfFirstSpace, MultiSpace) {
+    CPPLib s;
+    std::string input = "Adam J ";
+    int actual = s.IndexOfFirstSpace(input);
+    int expected = 4;
+    EXPECT_EQ(expected, actual);
+}
