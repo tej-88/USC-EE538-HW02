@@ -17,3 +17,31 @@ int CPPLib::IndexOfFirstSpace(std::string &input) {
 
     return -1;
 }
+
+// Given the full_name, it returns the first_name and last_name.
+// Note: you should use IndexOfFirstSpace function and cannot use any other
+// std:: functions.
+void CPPLib::SeparateFirstAndLastNames(std::string &full_name,
+                                std::string &first_name,
+                                std::string &last_name) {
+                                    int space_idx = IndexOfFirstSpace(full_name);
+
+                                    if ((space_idx == -1) && (full_name.size() == 0)) {
+                                        return;
+                                    }
+                                    else if (space_idx == -1){
+                                        first_name = full_name;
+                                        return;
+                                    }
+
+                                    for (int i = 0, n = full_name.size(); i < n; i++) {
+                                        if (i < space_idx) {
+                                            first_name.push_back(full_name.at(i));
+                                        }
+                                        else if (i > space_idx) {
+                                            last_name.push_back(full_name.at(i));
+                                        }
+                                    }
+
+                                    return;
+                                }
