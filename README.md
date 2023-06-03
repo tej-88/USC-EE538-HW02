@@ -32,3 +32,18 @@ Please clone this repository, edit README.md to answer the questions, and fill u
 
 
 See [cpp-template](https://github.com/ourarash/cpp-template) for help on installing bazel and debugging.
+
+## Q5
+### Dynamic Array
+- Question 1: Why did we have to proved size_1, size_2 as an input?  
+Answer 1: We are dealing with pointers, there is no way of obtaining the size of array just with its pointer.
+  
+- Question 2: How can we know the size of the output?  
+Answer 1: We know the size of the output must the sum of the input array sizes.  
+  
+### Dynamic Vectors
+- Question 1: Why didn't we provide the sizes?  
+Answer 1: We are dealing with std::vector which is a class, and it has a attribute(aka data) called size that stores the size of the vector.
+  
+- Question 2: We have two functions with the name of Concatenate. Is this ok?  
+Answer 1: It is fine as long the number and types of input parameters are different. This is called Function Overloading.

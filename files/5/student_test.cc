@@ -119,9 +119,9 @@ TEST(ConcatenateVector, EmptyFirst) {
 TEST(ConcatenateVector, EmptyLast) {
     CPPLib s;
 
-    std::vector<int> vec_1 = {1, 2};
+    std::vector<int> vec_1 {1, 2};
     std::vector<int> vec_2;
-    
+     =
     std::vector<int> actual = s.Concatenate(vec_1, vec_2);
     std::vector<int> expected = {1, 2};
 
