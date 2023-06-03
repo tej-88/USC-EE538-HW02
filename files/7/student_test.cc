@@ -38,3 +38,13 @@ TEST(SwapByReference, DuplicateInputs) {
     EXPECT_EQ(input1, 2);
     EXPECT_EQ(input2, 2);
 }
+
+TEST(SwapByReference, UniqueInputs) {
+    CPPLib s;
+    float input1 = 2;
+    float input2 = 3;
+    s.SwapByReference(input1, input2);
+
+    EXPECT_EQ(input1, 3);
+    EXPECT_EQ(input2, 2);
+}
