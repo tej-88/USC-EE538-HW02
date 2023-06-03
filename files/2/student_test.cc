@@ -151,3 +151,15 @@ TEST(SeparateFirstAndLastNames, MultiSpaceConsecutive) {
     EXPECT_EQ(expected_first, first);
     EXPECT_EQ(expected_last, last);
 }
+
+//-----------------------------------------------------------------------------
+// Write some test cases for each function.
+//-----------------------------------------------------------------------------
+
+TEST(NumberOfVowels, EmptyInput) {
+    CPPLib s;
+    std::string input;
+    int actual = s.NumberOfVowels(input);
+    int expected = -1;
+    EXPECT_EQ(expected, actual);
+}
