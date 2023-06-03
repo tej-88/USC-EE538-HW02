@@ -219,3 +219,11 @@ TEST(NumberOfVowels, SomeVowelsDiffCase) {
     int expected = 4;
     EXPECT_EQ(expected, actual);
 }
+
+TEST(NumberOfVowels, SpecialChars) {
+    CPPLib s;
+    std::string input = "?\" \\)(*&^%)'";
+    int actual = s.NumberOfVowels(input);
+    int expected = 0;
+    EXPECT_EQ(expected, actual);
+}
