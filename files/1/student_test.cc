@@ -52,3 +52,17 @@ TEST(GetFullName, NumInput) {
     std::string expected = "430 Adams";
     EXPECT_EQ(expected, actual);
 }
+
+//-----------------------------------------------------------------------------
+// Write several test cases for each function.
+// Make sure you cover all corner cases!
+//-----------------------------------------------------------------------------
+
+TEST(CountCharacters, EmptyStr) {
+    CPPLib s;
+    std::string input;
+    std::vector<char> chars = {'a', 't', 'o'};
+    int actual = s.CountCharacters(input, chars);
+    int expected = -1;
+    EXPECT_EQ(expected, actual);
+}
