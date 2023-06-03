@@ -137,3 +137,12 @@ TEST(IntersectVectors, EmptyFirstDuplicate) {
     std::vector<int> expected = {1};
     EXPECT_EQ(expected, actual);
 }
+
+TEST(IntersectVectors, SameInputDuplicate) {
+    CPPLib s;
+    std::vector<int> input_1 = {1, 1, 1};
+    std::vector<int> input_2 = {1, 1, 1};
+    std::vector<int> actual = s.IntersectVectors(input_1, input_2);
+    std::vector<int> expected = {1};
+    EXPECT_EQ(expected, actual);
+}
