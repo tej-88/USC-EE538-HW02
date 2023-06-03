@@ -287,3 +287,11 @@ TEST(NumberOfConsonants, NoConsonantsDiffCase) {
     int expected = 0;
     EXPECT_EQ(expected, actual);
 }
+
+TEST(NumberOfConsonants, SomeConsonantsDiffCase) {
+    CPPLib s;
+    std::string input = "The Great Story.";;
+    int actual = s.NumberOfConsonants(input);
+    int expected = 9;
+    EXPECT_EQ(expected, actual);
+}
