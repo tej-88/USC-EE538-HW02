@@ -34,3 +34,12 @@ TEST(CapitalizeFirstLetter, OnlyLetterLower) {
     EXPECT_EQ(expected, input);
     EXPECT_TRUE(actual_bool);
 }
+
+TEST(CapitalizeFirstLetter, OnlyLetterUpper) {
+    CPPLib s;
+    std::string input = "ABCD";
+    bool actual_bool = s.CapitalizeFirstLetter(input);
+    std::string expected = "ABCD";
+    EXPECT_EQ(expected, input);
+    EXPECT_FALSE(actual_bool);
+}
