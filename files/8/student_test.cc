@@ -30,3 +30,11 @@ TEST(UniqueVectorNotBySet, UniqueInput) {
     std::vector<int> expected = {1, 2, 3};
     EXPECT_EQ(expected, input);
 }
+
+TEST(UniqueVectorNotBySet, DuplicateInput) {
+    CPPLib s;
+    std::vector<int> input = {1, 1, 1};
+    s.UniqueVectorNotBySet(input);
+    std::vector<int> expected = {1};
+    EXPECT_EQ(expected, input);
+}
