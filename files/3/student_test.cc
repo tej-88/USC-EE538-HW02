@@ -70,3 +70,12 @@ TEST(Calculate, Bitwise_XOR) {
     float expected = 30;
     EXPECT_EQ(expected, actual);
 }
+
+TEST(Calculate, ShiftLeft) {
+    CPPLib s;
+    int a = 255;
+    int b = 2;
+    float actual = s.Calculate(a, b, Operation::kShift_left);
+    float expected = 1020;
+    EXPECT_EQ(expected, actual);
+}
