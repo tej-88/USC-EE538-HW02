@@ -31,3 +31,11 @@ TEST(IndexOfFirstSpace, FirstSpace) {
     int expected = 0;
     EXPECT_EQ(expected, actual);
 }
+
+TEST(IndexOfFirstSpace, LastSpace) {
+    CPPLib s;
+    std::string input = "Adam ";
+    int actual = s.IndexOfFirstSpace(input);
+    int expected = 4;
+    EXPECT_EQ(expected, actual);
+}
