@@ -84,3 +84,12 @@ TEST(CountCharacters, NoMatch) {
     int expected = 0;
     EXPECT_EQ(expected, actual);
 }
+
+TEST(CountCharacters, NormalInput) {
+    CPPLib s;
+    std::string input = "This is a test";
+    std::vector<char> chars = {'t','h'};
+    int actual = s.CountCharacters(input, chars);
+    int expected = 4;
+    EXPECT_EQ(expected, actual);
+}
