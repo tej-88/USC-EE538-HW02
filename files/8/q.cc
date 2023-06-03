@@ -26,3 +26,20 @@ void CPPLib::UniqueVectorNotBySet(std::vector<int> &input) {
 
     return;
 }
+
+// You can use std::set
+void CPPLib::UniqueVectorBySet(std::vector<int> &input) {
+    std::set<int> tmp_set;
+
+    for (const auto &x : input) {
+        tmp_set.insert(x);
+    }
+
+    input.clear();
+
+    for (auto it = tmp_set.begin(); it != tmp_set.end(); it++) {
+        input.push_back(*it);
+    }
+
+    return;
+}
