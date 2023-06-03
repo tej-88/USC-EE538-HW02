@@ -303,3 +303,17 @@ TEST(NumberOfConsonants, SpecialChars) {
     int expected = 0;
     EXPECT_EQ(expected, actual);
 }
+
+//-----------------------------------------------------------------------------
+// Write some test cases for each function.
+//-----------------------------------------------------------------------------
+
+TEST(Reverse, EmptyInput) {
+    CPPLib s;
+    std::string input;
+    int actual_int = s.Reverse(input);
+    std::string expected;
+    int expected_int = -1;
+    EXPECT_EQ(expected, input);
+    EXPECT_EQ(expected_int, actual_int);
+}
