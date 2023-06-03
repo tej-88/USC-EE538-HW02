@@ -111,3 +111,12 @@ TEST(CountCharacters, AllMatch) {
     int expected = 11;
     EXPECT_EQ(expected, actual);
 }
+
+TEST(CountCharacters, NumChars) {
+    CPPLib s;
+    std::string input = "THIS IS A TEST ";
+    std::vector<char> chars = {'1', '5'};
+    int actual = s.CountCharacters(input, chars);
+    int expected = 0;
+    EXPECT_EQ(expected, actual);
+}
