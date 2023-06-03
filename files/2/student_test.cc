@@ -171,3 +171,11 @@ TEST(NumberOfVowels, NoVowels) {
     int expected = 0;
     EXPECT_EQ(expected, actual);
 }
+
+TEST(NumberOfVowels, AllVowels) {
+    CPPLib s;
+    std::string input = "ei uo";
+    int actual = s.NumberOfVowels(input);
+    int expected = 4;
+    EXPECT_EQ(expected, actual);
+}
