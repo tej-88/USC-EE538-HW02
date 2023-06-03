@@ -79,3 +79,12 @@ TEST(Calculate, ShiftLeft) {
     float expected = 1020;
     EXPECT_EQ(expected, actual);
 }
+
+TEST(Calculate, ShiftRight) {
+    CPPLib s;
+    int a = 255;
+    int b = 2;
+    float actual = s.Calculate(a, b, Operation::kShift_right);
+    float expected = 63;
+    EXPECT_EQ(expected, actual);
+}
