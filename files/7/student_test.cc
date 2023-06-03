@@ -15,3 +15,13 @@ TEST(SwapByPointer, DuplicateInputs) {
     EXPECT_EQ(input1, 2);
     EXPECT_EQ(input2, 2);
 }
+
+TEST(SwapByPointer, UniqueInputs) {
+    CPPLib s;
+    float input1 = 3;
+    float input2 = 2;
+    s.SwapByPointer(&input1, &input2);
+
+    EXPECT_EQ(input1, 2);
+    EXPECT_EQ(input2, 3);
+}
