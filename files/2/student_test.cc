@@ -63,3 +63,19 @@ TEST(IndexOfFirstSpace, MultiSpaceConsecutive) {
     int expected = 4;
     EXPECT_EQ(expected, actual);
 }
+
+//-----------------------------------------------------------------------------
+// Write some test cases for each function.
+//-----------------------------------------------------------------------------
+
+TEST(SeparateFirstAndLastNames, EmptyInput) {
+    CPPLib s;
+    std::string full_name;
+    std::string first;
+    std::string last;
+    s.SeparateFirstAndLastNames(full_name, first, last);
+    std::string expected_first;
+    std::string expected_last;
+    EXPECT_EQ(expected_first, first);
+    EXPECT_EQ(expected_last, last);
+}
