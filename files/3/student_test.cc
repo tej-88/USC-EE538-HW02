@@ -25,3 +25,12 @@ TEST(Calculate, Subtract) {
     float expected = -10;
     EXPECT_EQ(expected, actual);
 }
+
+TEST(Calculate, Multiply) {
+    CPPLib s;
+    int a = 10;
+    int b = 20;
+    float actual = s.Calculate(a, b, Operation::kMultiplication);
+    float expected = 200;
+    EXPECT_EQ(expected, actual);
+}
