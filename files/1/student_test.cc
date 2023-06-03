@@ -66,3 +66,12 @@ TEST(CountCharacters, EmptyStr) {
     int expected = -1;
     EXPECT_EQ(expected, actual);
 }
+
+TEST(CountCharacters, EmptyChars) {
+    CPPLib s;
+    std::string input = "hey! ";
+    std::vector<char> chars;
+    int actual = s.CountCharacters(input, chars);
+    int expected = 0;
+    EXPECT_EQ(expected, actual);
+}
