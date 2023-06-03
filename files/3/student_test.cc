@@ -34,3 +34,12 @@ TEST(Calculate, Multiply) {
     float expected = 200;
     EXPECT_EQ(expected, actual);
 }
+
+TEST(Calculate, Divide) {
+    CPPLib s;
+    int a = 10;
+    int b = 20;
+    float actual = s.Calculate(a, b, Operation::kDivision);
+    float expected = 0.5;
+    EXPECT_EQ(expected, actual);
+}
