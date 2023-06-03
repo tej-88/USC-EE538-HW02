@@ -15,3 +15,11 @@ TEST(IndexOfFirstSpace, EmptyInput) {
     int expected = -1;
     EXPECT_EQ(expected, actual);
 }
+
+TEST(IndexOfFirstSpace, NoSpace) {
+    CPPLib s;
+    std::string input = "Adam";
+    int actual = s.IndexOfFirstSpace(input);
+    int expected = -1;
+    EXPECT_EQ(expected, actual);
+}
