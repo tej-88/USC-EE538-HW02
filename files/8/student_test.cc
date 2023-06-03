@@ -164,3 +164,12 @@ TEST(IntersectVectors, DiffInputDuplicate) {
     std::vector<int> expected = {1, 2};
     EXPECT_EQ(expected, actual);
 }
+
+TEST(IntersectVectors, DiffInputUnique) {
+    CPPLib s;
+    std::vector<int> input_1 = {1, 4, 5};
+    std::vector<int> input_2 = {2, 3, 9};
+    std::vector<int> actual = s.IntersectVectors(input_1, input_2);
+    std::vector<int> expected = {1, 2, 3, 4, 5, 9};
+    EXPECT_EQ(expected, actual);
+}
