@@ -45,3 +45,24 @@ void CPPLib::SeparateFirstAndLastNames(std::string &full_name,
 
                                     return;
                                 }
+
+// Returns the number of vowels (a, e, i, o, u) in a string.
+// Your algorithm should be case insensitive.
+int CPPLib::NumberOfVowels(std::string &input) {
+    if (input.size() == 0) {
+        return -1;
+    }
+
+    std::string vowels = "aeiou";
+    int num_vowels = 0;
+
+    for (const auto &v : vowels) {
+        for (const auto &i : input) {
+            if (v == tolower(i)) {
+                num_vowels++;
+            }
+        }
+    }
+
+    return num_vowels;
+}
