@@ -45,3 +45,24 @@ TEST(ConcatenateArray, EmptyFirst) {
 
     delete [] actual;
 }
+
+TEST(ConcatenateArray, EmptyLast) {
+    CPPLib s;
+
+    int size_1 = 3;
+    int size_2 = 0;
+    int size = size_1 + size_2;
+
+    int array_1[size_1] = {1, 2, 3};
+    int array_2[size_2];
+    
+    int *actual = s.Concatenate(array_1, size_1, array_2, size_2);
+    
+    int expected[size] = {1, 2, 3};
+
+    for (int i = 0; i < size; i++) {
+        EXPECT_EQ(expected[i], actual[i]);
+    }
+
+    delete [] actual;
+}
