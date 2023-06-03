@@ -211,3 +211,11 @@ TEST(NumberOfVowels, AllVowelsDiffCase) {
     int expected = 4;
     EXPECT_EQ(expected, actual);
 }
+
+TEST(NumberOfVowels, SomeVowelsDiffCase) {
+    CPPLib s;
+    std::string input = "The Great Story.";;
+    int actual = s.NumberOfVowels(input);
+    int expected = 4;
+    EXPECT_EQ(expected, actual);
+}
