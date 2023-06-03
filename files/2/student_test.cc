@@ -55,3 +55,11 @@ TEST(IndexOfFirstSpace, MultiSpace) {
     int expected = 4;
     EXPECT_EQ(expected, actual);
 }
+
+TEST(IndexOfFirstSpace, MultiSpaceConsecutive) {
+    CPPLib s;
+    std::string input = "Adam  J";
+    int actual = s.IndexOfFirstSpace(input);
+    int expected = 4;
+    EXPECT_EQ(expected, actual);
+}
