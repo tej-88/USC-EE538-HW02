@@ -139,3 +139,15 @@ TEST(SeparateFirstAndLastNames, MultiSpace) {
     EXPECT_EQ(expected_first, first);
     EXPECT_EQ(expected_last, last);
 }
+
+TEST(SeparateFirstAndLastNames, MultiSpaceConsecutive) {
+    CPPLib s;
+    std::string full_name = "Jo  hns Cook";
+    std::string first;
+    std::string last;
+    s.SeparateFirstAndLastNames(full_name, first, last);
+    std::string expected_first = "Jo";
+    std::string expected_last = " hns Cook";
+    EXPECT_EQ(expected_first, first);
+    EXPECT_EQ(expected_last, last);
+}
