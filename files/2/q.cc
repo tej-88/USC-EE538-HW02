@@ -66,3 +66,23 @@ int CPPLib::NumberOfVowels(std::string &input) {
 
     return num_vowels;
 }
+
+// Returns the number of consonants (letters that are not a, e, i, o, u) in a
+// string.
+// Your algorithm should be case insensitive.
+int CPPLib::NumberOfConsonants(std::string &input) {
+    if (input.size() == 0) {
+        return -1;
+    }
+
+    int num_letters = 0;
+    for (const auto &n : input) {
+        if (isalpha(n) != 0) {
+            num_letters++;
+        }
+    }
+
+    int num_vowels = NumberOfVowels(input);
+    
+    return (num_letters - num_vowels);
+}
