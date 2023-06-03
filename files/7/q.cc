@@ -13,3 +13,10 @@ void CPPLib::SwapByPointer(float *input1, float *input2) {
     *input2 = tmp;
     return;
 }
+
+void CPPLib::SwapByReference(float &input1, float &input2) {
+    float tmp = input1;
+    input1 = input2;
+    input2 = tmp;
+    return;
+}
