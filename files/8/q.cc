@@ -43,3 +43,24 @@ void CPPLib::UniqueVectorBySet(std::vector<int> &input) {
 
     return;
 }
+
+// Write a function that takes two vectors v1 and v2 and returns a new vector
+// that is the intersection of the values in v1 and v2. All the values in
+// return vector should be unique. Example: input: v1={1, 2, 2, 3}, v2={3, 4,
+// 4, 5}, output = {1, 2, 3, 4, 5}
+std::vector<int> CPPLib::IntersectVectors(std::vector<int> &input1,
+                                std::vector<int> &input2) {
+                                    std::vector<int> result;
+
+                                    for (const auto &x : input1) {
+                                        result.push_back(x);
+                                    }
+
+                                    for (const auto &y : input2) {
+                                        result.push_back(y);
+                                    }
+
+                                    UniqueVectorBySet(result);
+
+                                    return result;
+                                }
