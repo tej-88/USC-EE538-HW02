@@ -103,3 +103,15 @@ TEST(ConcatenateVector, EmptyInput) {
 
     EXPECT_EQ(expected, actual);
 }
+
+TEST(ConcatenateVector, EmptyFirst) {
+    CPPLib s;
+
+    std::vector<int> vec_1;
+    std::vector<int> vec_2 = {1, 2};
+    
+    std::vector<int> actual = s.Concatenate(vec_1, vec_2);
+    std::vector<int> expected = {1, 2};
+
+    EXPECT_EQ(expected, actual);
+}
