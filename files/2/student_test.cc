@@ -357,3 +357,13 @@ TEST(Reverse, MultiInput) {
     EXPECT_EQ(expected, input);
     EXPECT_EQ(expected_int, actual_int);
 }
+
+TEST(Reverse, NonLetters) {
+    CPPLib s;
+    std::string input = "123 (&)//";
+    int actual_int = s.Reverse(input);
+    std::string expected = "//)&( 321";
+    int expected_int = 0;
+    EXPECT_EQ(expected, input);
+    EXPECT_EQ(expected_int, actual_int);
+}
