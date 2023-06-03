@@ -263,3 +263,11 @@ TEST(NumberOfConsonants, SomeConsonants) {
     int expected = 3;
     EXPECT_EQ(expected, actual);
 }
+
+TEST(NumberOfConsonants, AllNums) {
+    CPPLib s;
+    std::string input = "1234";
+    int actual = s.NumberOfConsonants(input);
+    int expected = 0;
+    EXPECT_EQ(expected, actual);
+}
