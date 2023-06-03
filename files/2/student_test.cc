@@ -255,3 +255,11 @@ TEST(NumberOfConsonants, NoConsonants) {
     int expected = 0;
     EXPECT_EQ(expected, actual);
 }
+
+TEST(NumberOfConsonants, SomeConsonants) {
+    CPPLib s;
+    std::string input = "eigfruo";
+    int actual = s.NumberOfConsonants(input);
+    int expected = 3;
+    EXPECT_EQ(expected, actual);
+}
