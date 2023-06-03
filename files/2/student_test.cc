@@ -239,3 +239,11 @@ TEST(NumberOfConsonants, EmptyInput) {
     int expected = -1;
     EXPECT_EQ(expected, actual);
 }
+
+TEST(NumberOfConsonants, AllConsonants) {
+    CPPLib s;
+    std::string input = "bcdrg";
+    int actual = s.NumberOfConsonants(input);
+    int expected = 5;
+    EXPECT_EQ(expected, actual);
+}
