@@ -337,3 +337,13 @@ TEST(Reverse, MultiInputDuplicate) {
     EXPECT_EQ(expected, input);
     EXPECT_EQ(expected_int, actual_int);
 }
+
+TEST(Reverse, Palindrome) {
+    CPPLib s;
+    std::string input = "--MadaM--";
+    int actual_int = s.Reverse(input);
+    std::string expected = "--MadaM--";
+    int expected_int = 0;
+    EXPECT_EQ(expected, input);
+    EXPECT_EQ(expected_int, actual_int);
+}
