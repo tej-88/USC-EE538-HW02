@@ -43,3 +43,12 @@ TEST(Calculate, Divide) {
     float expected = 0.5;
     EXPECT_EQ(expected, actual);
 }
+
+TEST(Calculate, Bitwise_AND) {
+    CPPLib s;
+    int a = 10;
+    int b = 20;
+    float actual = s.Calculate(a, b, Operation::kBitwise_AND);
+    float expected = 0;
+    EXPECT_EQ(expected, actual);
+}
