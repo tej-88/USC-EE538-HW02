@@ -101,3 +101,12 @@ TEST(IntersectVectors, EmptyInput) {
     std::vector<int> expected;
     EXPECT_EQ(expected, actual);
 }
+
+TEST(IntersectVectors, EmptyFirst) {
+    CPPLib s;
+    std::vector<int> input_1;
+    std::vector<int> input_2 = {1, 2, 3};
+    std::vector<int> actual = s.IntersectVectors(input_1, input_2);
+    std::vector<int> expected = {1, 2, 3};
+    EXPECT_EQ(expected, actual);
+}
