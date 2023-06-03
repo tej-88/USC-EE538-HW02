@@ -44,3 +44,25 @@ int* CPPLib::Concatenate(int* array_1, int size_1, int* array_2, int size_2) {
         return array;
     }
 }
+
+// Concatenate two dynamic vectors.
+// Example:
+// vector_1 = {1, 2}
+// vector_2 = {2, 3, 4}
+// Output: {1, 2, 2, 3, 4}.
+// Question 1: Why didn't we provide the sizes?
+// Question 2: We have two functions with the name of Concatenate. Is this ok?
+std::vector<int> CPPLib::Concatenate(std::vector<int>& vector_1,
+                            std::vector<int>& vector_2) {
+                                std::vector<int> vec;
+
+                                for (const auto &n1 : vector_1) {
+                                    vec.push_back(n1);
+                                }
+
+                                for (const auto &n2 : vector_2) {
+                                    vec.push_back(n2);
+                                }
+
+                                return vec;
+                            }
