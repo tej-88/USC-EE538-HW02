@@ -43,3 +43,12 @@ TEST(CapitalizeFirstLetter, OnlyLetterUpper) {
     EXPECT_EQ(expected, input);
     EXPECT_FALSE(actual_bool);
 }
+
+TEST(CapitalizeFirstLetter, AlreadyCapitalised) {
+    CPPLib s;
+    std::string input = " This is great.";
+    bool actual_bool = s.CapitalizeFirstLetter(input);
+    std::string expected = " This is great.";
+    EXPECT_EQ(expected, input);
+    EXPECT_FALSE(actual_bool);
+}
