@@ -93,3 +93,12 @@ TEST(CountCharacters, NormalInput) {
     int expected = 4;
     EXPECT_EQ(expected, actual);
 }
+
+TEST(CountCharacters, CaseMismatch) {
+    CPPLib s;
+    std::string input = "THIS IS A TEST !, ?";
+    std::vector<char> chars = {'t','h', 'e'};
+    int actual = s.CountCharacters(input, chars);
+    int expected = 5;
+    EXPECT_EQ(expected, actual);
+}
